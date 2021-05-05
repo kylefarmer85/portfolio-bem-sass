@@ -61,9 +61,9 @@ h2 {
   padding-bottom: 30px;
 }
 
-/* HEADER */
+/* HERO */
 
-header {
+.hero {
   background-image: linear-gradient(
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0.3),
@@ -74,10 +74,23 @@ header {
   background-position: center;
   background-attachment: scroll;
   height: 100vh;
+
+  &__text-box {
+    padding: 80px 10%;
+  }
+
+  &__title,
+  &__subtitle {
+    color: #eee;
+    line-height: 1.5em;
+  }
 }
 
 .main-nav {
   background: rgba(0, 0, 0, 0.3);
+
+  &__link-box {
+  display: flex;  
   position: fixed;
   padding: 12px 4%;
   right: 0;
@@ -86,34 +99,26 @@ header {
   width: 100vw;
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
+  }
+
+  &__link {
+    margin: 0 15px;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: #ffd369;
+    text-decoration: none;
+    border-bottom: 2px dotted transparent;
+    transition: border-bottom 0.3s;
 }
 
-.main-nav li {
-  margin: 0 15px;
+  &__link:hover,
+  &__link:active {
+    border-bottom: 2px solid #eee;
+  }
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
-  color: #ffd369;
-  text-decoration: none;
-  border-bottom: 2px dotted transparent;
-  transition: border-bottom 0.3s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-  border-bottom: 2px solid #eee;
-}
-
-.hero-text-box {
-  padding: 80px 10%;
-}
-
-.hero-text-box h1,
-.hero-text-box h2 {
-  color: #eee;
-  line-height: 1.5em;
-}
 
 /* ABOUT */
 

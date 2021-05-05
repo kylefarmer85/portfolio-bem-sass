@@ -59,8 +59,8 @@ h2 {
   padding-bottom: 30px;
 }
 
-/* HEADER */
-header {
+/* HERO */
+.hero {
   background-image: linear-gradient(black, rgba(0, 0, 0, 0.3), black), url("/img/flyingtoasters.gif");
   background-size: cover;
   background-position: center;
@@ -68,8 +68,21 @@ header {
   height: 100vh;
 }
 
+.hero__text-box {
+  padding: 80px 10%;
+}
+
+.hero__title, .hero__subtitle {
+  color: #eee;
+  line-height: 1.5em;
+}
+
 .main-nav {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__link-box {
+  display: flex;
   position: fixed;
   padding: 12px 4%;
   right: 0;
@@ -80,31 +93,19 @@ header {
   -webkit-backdrop-filter: blur(40px);
 }
 
-.main-nav li {
+.main-nav__link {
   margin: 0 15px;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
+.main-nav__link:link, .main-nav__link:visited {
   color: #ffd369;
   text-decoration: none;
   border-bottom: 2px dotted transparent;
   transition: border-bottom 0.3s;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
+.main-nav__link:hover, .main-nav__link:active {
   border-bottom: 2px solid #eee;
-}
-
-.hero-text-box {
-  padding: 80px 10%;
-}
-
-.hero-text-box h1,
-.hero-text-box h2 {
-  color: #eee;
-  line-height: 1.5em;
 }
 
 /* ABOUT */
