@@ -1,0 +1,29 @@
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  .hero-text-box {
+    padding: 70px 10%;
+  }
+  .skills i {
+    font-size: 5em;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  header {
+    background-attachment: fixed;
+  }
+}
+
+@media screen and(-webkit-min-device-pixel-ratio:0) {
+  header {
+    -chrome-: only(; background-attachment: fixed;);
+  }
+}

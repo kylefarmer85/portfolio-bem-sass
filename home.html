@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="queries.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+
+  <title>Kyle Farmer's Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="main-nav flex">
+        <li><a href="#about-link">About</a></li>
+        <li><a href="#projects-link">Projects</a></li>
+        <li><a href="https://drive.google.com/file/d/1G64teZGf8IGIDH9nHRkfH_VkT-mJXCqI/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">Resume</a></li>
+        <li><a href="#connect-link">Connect</a></li>
+      </ul>
+      </div>
+    </nav>
+    <div class="hero-text-box fade-in">
+      <h1>Hello, I'm Kyle</h1>
+      <h2>a software engineer in Chicago.</h2>
+  </header>
+
+  <section id="about-link" class="about">
+    <h1 class="section-title">About</h1>
+    <div class="flex wrap-evenly">
+      <p>It all started when my 3rd grade teacher, Mrs. Barnes, asked me to join the computer team and teach the
+        rest of the students how to use the school's new Macintosh computers. They were truly magical and I was hooked
+        immediately (google "flying toasters"). Surely, <em>this</em> would be my calling. However, in 8th grade a different path presented itself when I got my first
+        guitar.<br /><br />Fast forward to
+        today&#8212 after a decade in the live music industry, I’m returning to
+        my original fascination. I bring 10 years of experience collaborating with diverse teams from all over the world, creative problem-solving while under pressure, and the work ethic to never give up&#8212 “the show must go on” rings surprisingly true.<br /><br />I'm passionate about the way software looks, feels, and functions for the user, and my best work is achieved while in the company of others.</p>
+      <img src="img/profile-pic.png" alt="profile" />
+    </div>
+  </section>
+  <hr>
+  <section class="skills">
+    <h1 class="section-title">Skills</h1>
+    <div class="flex wrap-evenly">
+      <div class="icon-item">
+        <i class="fab fa-js"></i>
+        <p>JavaScript ES6</p>
+      </div>
+      <div class="icon-item">
+        <i class="fab fa-react"></i>
+        <p>React / Redux</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-gem"></i>
+        <p>Ruby on Rails</p>
+      </div>
+      <div class="icon-item">
+        <i class="fab fa-bootstrap"></i>
+        <p>Bootstrap</p>
+      </div>
+      <div class="icon-item">
+        <i class="fab fa-html5"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="icon-item">
+        <i class="fab fa-css3"></i>
+        <p>CSS3</p>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section id="projects-link" class="projects">
+    <h1 class="section-title">Projects</h1>
+    <div class="flex wrap-evenly">
+      <div class="project-item">
+        <h2>GamePad</h2>
+        <img src="img/gamepad.gif" alt="gamepad demo" />
+        <p>Old Games, New Friends! GamePad is a social vintage video game app where users connect with others through
+          their appreciation for old games.
+        </p>
+        <h3>Tech:</h3>
+        <p>JavaScript, React, Redux, Ruby on Rails, RESTful APIs, JWT, bcrypt, Bootstrap, PostgreSQL</p>
+
+        <div class="project-icons">
+          <a href="https://github.com/kylefarmer85/gamepad-react-frontend" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-github-square"></i></a>
+          <a href="https://www.youtube.com/watch?v=uQLKLM_15yA" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-youtube-square"></i></a>
+          <a href="https://game-pad.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i
+              class="fas fa-globe"></i></a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <h2>Flatnote</h2>
+        <img src="img/flatnote.gif" alt="flatnote demo" />
+        <p>Don't get caught saying "Oh CRUD, I should've made a note!" Users can leave notes on stickies for
+          themselves and never forget anything again.
+        </p>
+        <h3>Tech:</h3>
+        <p>JavaScript, React, Redux, Ruby on Rails, RESTful APIs, JWT, bcrypt, Semantic UI, PostgreSQL</p>
+
+        <div class="project-icons">
+          <a href="https://github.com/kylefarmer85/react-redux-flatnote" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-github-square"></i></a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <h2>Boardgame Social</h2>
+        <img src="img/boardgame.gif" alt="boardgame social demo" />
+        <p>So many games, so little time. Traverse a sprawling database with thousands of boardgames and build a
+          personal collection. Rate games and leave reviews for others to see and like.
+        </p>
+        <h3>Tech:</h3>
+        <p>Ruby on Rails, Active Record, bcrypt, Bulma, SQLite</p>
+
+        <div class="project-icons">
+          <a href="https://github.com/kylefarmer85/BoardgameApp" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-github-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section id="connect-link" class="contact">
+    <h1 class="section-title">Connect</h1>
+    <div class="flex wrap-evenly">
+      <a href="https://www.linkedin.com/in/kylefarmer85" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:kylefarmer85@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/kylefarmer85" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      <a href="https://kylefarmer85.medium.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium-m"></i></a>
+    </div>
+  </section>
+  <footer>
+    <p>© 2021 Kyle Farmer</p>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
