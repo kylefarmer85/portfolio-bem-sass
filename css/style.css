@@ -44,14 +44,25 @@ i {
 /* HEADINGS */
 h1 {
   color: #eee;
-  font-size: 3em;
+  font-size: 2em;
   font-family: 'Merriweather', 'Arial', 'sans-serif';
-  animation: moveInRight 1s ease-out;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2em;
+  }
 }
 
 h2 {
+  color: #eee;
   font-size: 1.5em;
-  animation: moveInBottom 1.5s ease-out;
+}
+
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 1.2em;
+  }
 }
 
 .section-title {
@@ -72,9 +83,13 @@ h2 {
   padding: 80px 10%;
 }
 
-.hero__title, .hero__subtitle {
-  color: #eee;
+.hero__title {
+  animation: moveInRight 1s ease-out;
+}
+
+.hero__subtitle {
   line-height: 1.5em;
+  animation: moveInBottom 1.5s ease-out;
 }
 
 .main-nav {
@@ -260,6 +275,12 @@ footer {
   100% {
     opacity: 100;
     transform: translate(0);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
