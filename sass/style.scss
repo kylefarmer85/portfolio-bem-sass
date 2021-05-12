@@ -1,21 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  font-family: 'Source Sans Pro', 'Arial', sans-serif;
-  background-image: linear-gradient(#393e46, #222831);
-  font-size: 20px;
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden;
-}
+@import 'base';
 
 /* REUSABLE */
 
-section {
+.section {
   padding: 80px 0;
 }
 
@@ -28,24 +15,24 @@ section {
   justify-content: space-evenly;
 }
 
-hr {
+.hr {
   display: block;
   width: 80px;
   margin: 0 auto;
-  color: #393e46;
+  color: $primary-light;
   border: dotted 8px;
   border-bottom: none;
 }
 
 i {
   font-size: 4em;
-  color: #ffd369;
+  color: $yellow;
 }
 
 /* HEADINGS */
 
 h1 {
-  color: #eee;
+  color: $white;
   font-size: 2em;
   font-family: 'Merriweather', 'Arial', 'sans-serif';
 
@@ -55,7 +42,7 @@ h1 {
 }
 
 h2 {
-  color: #eee;
+  color: $white;
   font-size: 1.5em;
 
   @media only screen and (max-width: 700px) {
@@ -64,7 +51,7 @@ h2 {
 }
 
 .section-title {
-  color: #eee;
+  color: $white;
   font-size: 2em;
   font-family: 'Merriweather', 'Arial', 'sans-serif';
   text-align: center;
@@ -124,7 +111,7 @@ h2 {
 
   &__link:link,
   &__link:visited {
-    color: #ffd369;
+    color: $yellow;
     text-decoration: none;
     border-bottom: 2px dotted transparent;
     transition: border-bottom 0.3s;
@@ -132,7 +119,7 @@ h2 {
 
   &__link:hover,
   &__link:active {
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid $white;
   }
 }
 
@@ -147,7 +134,7 @@ h2 {
   }
 
   &__bio-text {
-    color: #eee;
+    color: $white;
     display: inline-block;
     margin-bottom: 30px;
     width: 500px;
@@ -168,34 +155,34 @@ h2 {
 }
 
 .icon-item p {
-  color: #eee;
+  color: $white;
   margin-top: 5px;
 }
 
 /* PROJECTS */
 
 .project-item {
-  background-color: #393e46;
+  background-color: $primary-light;
   padding: 25px 25px;
   margin: 25px;
-  box-shadow: 0px 5px #ffd369;
+  box-shadow: 0px 5px $yellow;
   border-radius: 3%;
 }
 
 .project-item h2 {
-  color: #eee;
+  color: $white;
   text-align: center;
   margin-bottom: 5px;
 }
 
 .project-item h3 {
-  color: #eee;
+  color: $white;
   text-align: center;
   margin-top: 12px;
 }
 
 .project-item p {
-  color: #eee;
+  color: $white;
   margin: 5px auto;
   width: 300px;
 }
@@ -219,7 +206,7 @@ h2 {
 
 .project-icons a i:hover,
 .project-icons a i:active {
-  color: #eee;
+  color: $white;
 }
 
 .fa-js {
@@ -266,7 +253,7 @@ h2 {
 /* FOOTER */
 
 footer {
-  background-color: #ffd369;
+  background-color: $yellow;
   color: #222831;
   text-align: center;
 }

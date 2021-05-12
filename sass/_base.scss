@@ -1,0 +1,20 @@
+$primary-light: #393e46;
+$primary-dark: #222831;
+$white: #eee;
+$yellow: #ffd369;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  background-image: linear-gradient($primary-light, $primary-dark);
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
