@@ -3,6 +3,16 @@ $primary-dark: #222831;
 $white: #eee;
 $yellow: #ffd369;
 
+$fs-base: 1rem;
+$fs-mobile: .9rem;
+$fs-h1: 5rem;
+$fs-h2: 4rem;
+$fs-h3: 3rem;
+$fs-h4: 2rem;
+$fs-link: 1.1rem;
+
+$courier: 'Courier', serif;
+$verdana: 'Verdana', sans-serif;
 
 * {
   margin: 0;
@@ -12,9 +22,14 @@ $yellow: #ffd369;
 
 html,
 body {
-  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  font-family: $verdana;
+  font-weight: 300;
   background-image: linear-gradient($primary-light, $primary-dark);
-  font-size: 20px;
+  font-size: $fs-base;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+
+  @media only screen and (max-width: 500px) {
+    font-size: $fs-mobile;
+  }
 }

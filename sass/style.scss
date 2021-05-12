@@ -3,15 +3,15 @@
 /* REUSABLE */
 
 article {
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 
 hr {
   display: block;
-  width: 80px;
+  width: 7rem;
   margin: 0 auto;
   color: $primary-light;
-  border: dotted 8px;
+  border: dotted .6rem;
   border-bottom: none;
 }
 
@@ -20,37 +20,18 @@ i {
   color: $yellow;
 }
 
-/* HEADINGS */
-
-// h1 {
-//   color: $white;
-//   font-size: 2em;
-//   font-family: 'Merriweather', 'Arial', 'sans-serif';
-
-//   @media only screen and (max-width: 700px) {
-//     font-size: 2em;
-//   }
-// }
-
-// h2 {
-//   color: $white;
-//   font-size: 1.5em;
-
-//   @media only screen and (max-width: 700px) {
-//     font-size: 1.2em;
-//   }
-// }
-
 .article-heading {
   color: $white;
-  font-size: 2em;
-  font-family: 'Merriweather', 'Arial', 'sans-serif';
+  font-size: $fs-h2;
+  font-family: 'Courier', 'Arial', 'sans-serif';
+  font-weight: 300;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
 
-  @media only screen and (max-width: 700px) {
-    font-size: 2em;
+  @media only screen and (max-width: 450px) {
+    font-size: 3rem;
   }
+
 }
 
 /* HERO */
@@ -68,40 +49,49 @@ i {
   height: 100vh;
 
   &__text-box {
-    padding: 7em;
+    padding: 6rem;
     @media only screen and (max-width: 700px) {
-      padding: 7em 2.5em;
+      padding: 6rem 2.2em;
     }
   }
 
   &__title {
+    font-size: $fs-h1;
+    font-family: $courier;
+    font-weight: 300;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    width: 7.5em;
-    border-right: 4px solid $white;
+    width: 9em;
+    border-right: .3rem solid $white;
     color: $white;
-    font-size: 3em;
-    font-family: 'Merriweather', 'Arial', 'sans-serif';
     margin: 0 auto;
     
     animation: 
       typing 1.5s steps(22, end),
       blink .75s step-end infinite alternate;
       
-    @media only screen and (max-width: 700px) {
-      font-size: 2em;
+    @media only screen and (max-width: 930px) {
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: 450px) {
+      font-size: 2rem;
     }
   }
 
   &__subtitle {
     color: $white;
-    font-size: 1.5em;
+  
+    font-weight: 300;
     line-height: 1.5em;
-    @media only screen and (max-width: 700px) {
-      font-size: 1.2em;
-    }
     animation: moveInBottom 2.2s ease-out;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -109,19 +99,20 @@ i {
   background: rgba(0, 0, 0, 0.3);
 
   &__link-box {
-  display: flex;  
-  position: fixed;
-  padding: 12px 4%;
-  right: 0;
-  justify-content: space-evenly;
-  list-style: none;
-  width: 100vw;
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
+    display: flex;  
+    position: fixed;
+    padding: 12px 4%;
+    right: 0;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100vw;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
   }
 
   &__link {
     margin: 0 15px;
+    font-size: $fs-link;
   }
 
   &__link:link,
@@ -145,7 +136,7 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 0 10px;
+  padding: 0 1rem;
   align-items: center;
 
   &__text {
@@ -323,51 +314,3 @@ footer {
     transform: translate(0);
   }
 }
-
-// @keyframes moveInRight {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(-5rem);
-//   }
-
-//   75% {
-//     opacity: 0.2;
-//   }
-
-//   100% {
-//     opacity: 1;
-//     transform: translate(0);
-//   }
-// }
-
-@media only screen and (max-width: 700px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-  // h1 {
-  //   font-size: 2em;
-  // }
-  // h2 {
-  //   font-size: 1.2em;
-  // }
-  // .hero-text-box {
-  //   padding: 70px 10%;
-  // }
-  // .skills i {
-  //   font-size: 5em;
-  // }
-// }
-
-// @media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-//   header {
-//     background-attachment: fixed;
-//   }
-// }
-
-// @media screen and(-webkit-min-device-pixel-ratio:0) {
-//   header {
-//     -chrome-: only(; background-attachment: fixed;);
-//   }
-// }
