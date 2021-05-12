@@ -110,10 +110,6 @@ i {
     -webkit-backdrop-filter: blur(40px);
   }
 
-  &__link {
-    font-size: $fs-link;
-  }
-
   &__link:link,
   &__link:visited {
     color: $yellow;
@@ -156,13 +152,11 @@ i {
 /* SKILLS */
 .skills {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 3rem; 
 
-  @media only screen and (min-width: 700px) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+  @media only screen and (max-width: 700px) {
+    grid-template-columns: 1fr 1fr;
   }
 
   &__item {
