@@ -152,15 +152,29 @@ i {
 }
 
 /* SKILLS */
-.skill-item {
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+.skills__item {
   text-align: center;
 }
 
-.skill-item__icon {
+.skills__icon {
   margin: 10px;
 }
 
-.skill-item__name {
+.skills__name {
   color: #eee;
   margin-top: 5px;
 }

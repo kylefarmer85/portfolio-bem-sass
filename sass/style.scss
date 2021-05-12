@@ -160,9 +160,20 @@ i {
 }
 
 /* SKILLS */
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 2rem; 
 
-.skill-item {
-  text-align: center;
+  @media only screen and (min-width: 700px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  &__item {
+    text-align: center;
+  }
 
   &__icon{
     margin: 10px;
