@@ -31,26 +31,26 @@ i {
 
 /* HEADINGS */
 
-h1 {
-  color: $white;
-  font-size: 2em;
-  font-family: 'Merriweather', 'Arial', 'sans-serif';
+// h1 {
+//   color: $white;
+//   font-size: 2em;
+//   font-family: 'Merriweather', 'Arial', 'sans-serif';
 
-  @media only screen and (max-width: 700px) {
-    font-size: 2em;
-  }
-}
+//   @media only screen and (max-width: 700px) {
+//     font-size: 2em;
+//   }
+// }
 
-h2 {
-  color: $white;
-  font-size: 1.5em;
+// h2 {
+//   color: $white;
+//   font-size: 1.5em;
 
-  @media only screen and (max-width: 700px) {
-    font-size: 1.2em;
-  }
-}
+//   @media only screen and (max-width: 700px) {
+//     font-size: 1.2em;
+//   }
+// }
 
-.article-title {
+.article-heading {
   color: $white;
   font-size: 2em;
   font-family: 'Merriweather', 'Arial', 'sans-serif';
@@ -78,14 +78,29 @@ h2 {
 
   &__text-box {
     padding: 80px 10%;
+    @media only screen and (max-width: 700px) {
+      padding: 80px 10%;
+    }
   }
 
   &__title {
+    color: $white;
+    font-size: 3em;
+    font-family: 'Merriweather', 'Arial', 'sans-serif';
+  
+    @media only screen and (max-width: 700px) {
+      font-size: 2em;
+    }
     animation: moveInRight 1s ease-out;
   }
 
   &__subtitle {
+    color: $white;
+    font-size: 1.5em;
     line-height: 1.5em;
+    @media only screen and (max-width: 700px) {
+      font-size: 1.2em;
+    }
     animation: moveInBottom 1.5s ease-out;
   }
 }
@@ -127,13 +142,10 @@ h2 {
 /* ABOUT */
 
 .about {
+  padding: 0 10px;
+  align-items: center;
 
-  &__bio {
-    padding: 0 10px;
-    align-items: center;
-  }
-
-  &__bio-text {
+  &__text {
     color: $white;
     display: inline-block;
     margin-bottom: 30px;
@@ -141,7 +153,7 @@ h2 {
     line-height: 1.5em;
   }
   
-  &__bio-picture {
+  &__picture {
     height: 50vh;
     border-radius: 50%;
     }
