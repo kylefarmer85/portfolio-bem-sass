@@ -2,7 +2,7 @@
 
 /* REUSABLE */
 
-.section {
+article {
   padding: 80px 0;
 }
 
@@ -15,7 +15,7 @@
   justify-content: space-evenly;
 }
 
-.hr {
+hr {
   display: block;
   width: 80px;
   margin: 0 auto;
@@ -50,7 +50,7 @@ h2 {
   }
 }
 
-.section-title {
+.article-title {
   color: $white;
   font-size: 2em;
   font-family: 'Merriweather', 'Arial', 'sans-serif';
