@@ -205,7 +205,7 @@ i {
   justify-content: space-evenly;
 }
 
-.projects .project-item {
+.project {
   background-color: #393e46;
   padding: 25px 25px;
   margin: 25px;
@@ -213,43 +213,42 @@ i {
   border-radius: 3%;
 }
 
-.projects .project-item h2 {
+.project__heading {
   color: #eee;
   text-align: center;
   margin-bottom: 5px;
 }
 
-.projects .project-item h3 {
-  color: #eee;
-  text-align: center;
-  margin-top: 12px;
-}
-
-.projects .project-item p {
+.project__desc {
   color: #eee;
   margin: 5px auto;
   width: 300px;
 }
 
-.projects .project-item img {
+.project__tech {
+  color: #eee;
+  margin: 5px auto;
   width: 300px;
-}
-
-.projects .project-item h3 + p {
   text-align: center;
 }
 
-.projects .project-icons {
+.project__tech-heading {
+  color: #eee;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.project__icons {
   margin-top: 15px;
   text-align: center;
 }
 
-.projects .project-icons a {
+.project__icons-link {
   margin: 0 10px;
 }
 
-.projects .project-icons a i:hover,
-.projects .project-icons a i:active {
+.project__icons-link i:hover,
+.project__icons-link i:active {
   color: #eee;
 }
 

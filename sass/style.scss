@@ -206,58 +206,55 @@ i {
 
 /* PROJECTS */
 
-
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
 
-  .project-item {
+.project {
     background-color: $primary-light;
     padding: 25px 25px;
     margin: 25px;
     box-shadow: 0px 5px $yellow;
     border-radius: 3%;
-  }
 
-  .project-item h2 {
+  &__heading {
     color: $white;
     text-align: center;
     margin-bottom: 5px;
   }
 
-  .project-item h3 {
-    color: $white;
-    text-align: center;
-    margin-top: 12px;
-  }
-
-  .project-item p {
+  &__desc {
     color: $white;
     margin: 5px auto;
     width: 300px;
   }
 
-  .project-item img {
+  &__tech {
+    color: $white;
+    margin: 5px auto;
     width: 300px;
-  }
-
-  .project-item h3 + p {
     text-align: center;
   }
 
-  .project-icons {
+  &__tech-heading {
+    color: $white;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  &__icons {
     margin-top: 15px;
     text-align: center;
   }
 
-  .project-icons a {
+  &__icons-link {
     margin: 0 10px;
-  }
-
-  .project-icons a i:hover,
-  .project-icons a i:active {
-    color: $white;
+    & i:hover,
+    & i:active {
+      color: $white;
+    }
   }
 }
 
