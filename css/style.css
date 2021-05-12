@@ -135,6 +135,10 @@ i {
   -webkit-backdrop-filter: blur(40px);
 }
 
+.main-nav__link {
+  font-size: 1rem;
+}
+
 .main-nav__link:link, .main-nav__link:visited {
   color: #ffd369;
   text-decoration: none;
