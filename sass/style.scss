@@ -126,7 +126,6 @@ video#bgvideo {
     &:link,
     &:visited {
       color: $yellow;
-      text-decoration: none;
       border-bottom: 2px dotted transparent;
       transition: border-bottom 0.3s;
   }
@@ -247,14 +246,27 @@ video#bgvideo {
   
   &__icons {
     margin-top: 1.5rem;
+    display: flex;
     text-align: center;
   }
 
   &__icons-link {
+    display: flex;
+    flex-direction: column;
+    color: $yellow;
     margin: 0 1rem;
-    & i:hover,
-    & i:active {
+
+    &:link,
+    &:visited {
+      backface-visibility: hidden;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
       color: $white;
+      transform: translateY(4px);
+      
     }
   }
 }
@@ -267,6 +279,10 @@ video#bgvideo {
   justify-content: space-evenly;
 
   &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $yellow;
     margin: 1rem;
 
     &:link,
@@ -277,6 +293,7 @@ video#bgvideo {
 
     &:hover,
     &:active {
+      color: $white;
       transform: translateY(4px);
     }
   }
