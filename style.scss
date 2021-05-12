@@ -64,8 +64,15 @@ h2 {
 }
 
 .section-title {
+  color: #eee;
+  font-size: 2em;
+  font-family: 'Merriweather', 'Arial', 'sans-serif';
   text-align: center;
   padding-bottom: 30px;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 2em;
+  }
 }
 
 /* HERO */
@@ -132,22 +139,25 @@ h2 {
 
 /* ABOUT */
 
-.about div {
-  padding: 0 10px;
-  align-items: center;
-}
+.about {
 
-.about p {
-  color: #eee;
-  display: inline-block;
-  margin-bottom: 30px;
-  width: 500px;
-  line-height: 1.5em;
-}
+  &__bio {
+    padding: 0 10px;
+    align-items: center;
+  }
 
-.about img {
-  height: 50vh;
-  border-radius: 50%;
+  &__bio-text {
+    color: #eee;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 500px;
+    line-height: 1.5em;
+  }
+  
+  &__bio-picture {
+    height: 50vh;
+    border-radius: 50%;
+    }
 }
 
 /* SKILLS */

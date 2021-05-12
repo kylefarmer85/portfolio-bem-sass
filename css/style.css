@@ -66,8 +66,17 @@ h2 {
 }
 
 .section-title {
+  color: #eee;
+  font-size: 2em;
+  font-family: 'Merriweather', 'Arial', 'sans-serif';
   text-align: center;
   padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  .section-title {
+    font-size: 2em;
+  }
 }
 
 /* HERO */
@@ -124,12 +133,12 @@ h2 {
 }
 
 /* ABOUT */
-.about div {
+.about__bio {
   padding: 0 10px;
   align-items: center;
 }
 
-.about p {
+.about__bio-text {
   color: #eee;
   display: inline-block;
   margin-bottom: 30px;
@@ -137,7 +146,7 @@ h2 {
   line-height: 1.5em;
 }
 
-.about img {
+.about__bio-picture {
   height: 50vh;
   border-radius: 50%;
 }
