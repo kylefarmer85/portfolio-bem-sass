@@ -161,14 +161,17 @@ i {
 
 /* SKILLS */
 
-.icon-item {
-  margin: 10px;
+.skill-item {
   text-align: center;
-}
 
-.icon-item p {
-  color: $white;
-  margin-top: 5px;
+  &__icon{
+    margin: 10px;
+  }
+
+  &__name {
+    color: $white;
+    margin-top: 5px;
+  }
 }
 
 /* PROJECTS */

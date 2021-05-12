@@ -152,12 +152,15 @@ i {
 }
 
 /* SKILLS */
-.icon-item {
-  margin: 10px;
+.skill-item {
   text-align: center;
 }
 
-.icon-item p {
+.skill-item__icon {
+  margin: 10px;
+}
+
+.skill-item__name {
   color: #eee;
   margin-top: 5px;
 }
