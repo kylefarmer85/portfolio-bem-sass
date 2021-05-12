@@ -149,6 +149,7 @@ i {
 .about__picture {
   height: 50vh;
   border-radius: 50%;
+  margin: 2rem 2rem 0 2rem;
 }
 
 /* SKILLS */
