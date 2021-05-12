@@ -18,15 +18,6 @@ article {
   padding: 80px 0;
 }
 
-.flex {
-  display: flex;
-}
-
-.wrap-evenly {
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 hr {
   display: block;
   width: 80px;
@@ -134,6 +125,9 @@ i {
 
 /* ABOUT */
 .about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 0 10px;
   align-items: center;
 }
@@ -180,8 +174,38 @@ i {
   margin-top: 5px;
 }
 
+.skills .fa-js {
+  color: #f0db4f;
+}
+
+.skills .fa-react {
+  color: #61dbfb;
+}
+
+.skills .fa-gem {
+  color: #b02b2c;
+}
+
+.skills .fa-bootstrap {
+  color: #553c7b;
+}
+
+.skills .fa-html5 {
+  color: #e34f26;
+}
+
+.skills .fa-css3 {
+  color: #264de4;
+}
+
 /* PROJECTS */
-.project-item {
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projects .project-item {
   background-color: #393e46;
   padding: 25px 25px;
   margin: 25px;
@@ -189,71 +213,53 @@ i {
   border-radius: 3%;
 }
 
-.project-item h2 {
+.projects .project-item h2 {
   color: #eee;
   text-align: center;
   margin-bottom: 5px;
 }
 
-.project-item h3 {
+.projects .project-item h3 {
   color: #eee;
   text-align: center;
   margin-top: 12px;
 }
 
-.project-item p {
+.projects .project-item p {
   color: #eee;
   margin: 5px auto;
   width: 300px;
 }
 
-.project-item img {
+.projects .project-item img {
   width: 300px;
 }
 
-.project-item h3 + p {
+.projects .project-item h3 + p {
   text-align: center;
 }
 
-.project-icons {
+.projects .project-icons {
   margin-top: 15px;
   text-align: center;
 }
 
-.project-icons a {
+.projects .project-icons a {
   margin: 0 10px;
 }
 
-.project-icons a i:hover,
-.project-icons a i:active {
+.projects .project-icons a i:hover,
+.projects .project-icons a i:active {
   color: #eee;
 }
 
-.fa-js {
-  color: #f0db4f;
+/* CONNECT */
+.connect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.fa-react {
-  color: #61dbfb;
-}
-
-.fa-gem {
-  color: #b02b2c;
-}
-
-.fa-bootstrap {
-  color: #553c7b;
-}
-
-.fa-html5 {
-  color: #e34f26;
-}
-
-.fa-css3 {
-  color: #264de4;
-}
-
-/* CONTACT */
 .contact a {
   margin: 10px;
 }
