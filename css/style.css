@@ -57,20 +57,26 @@ i {
 }
 
 .hero__text-box {
-  padding: 80px 10%;
+  padding: 7em;
 }
 
 @media only screen and (max-width: 700px) {
   .hero__text-box {
-    padding: 80px 10%;
+    padding: 7em 2.5em;
   }
 }
 
 .hero__title {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 7.5em;
+  border-right: 4px solid #eee;
   color: #eee;
   font-size: 3em;
   font-family: 'Merriweather', 'Arial', 'sans-serif';
-  animation: moveInRight 1s ease-out;
+  margin: 0 auto;
+  animation: typing 1.5s steps(22, end), blink 0.75s step-end infinite alternate;
 }
 
 @media only screen and (max-width: 700px) {
@@ -83,7 +89,7 @@ i {
   color: #eee;
   font-size: 1.5em;
   line-height: 1.5em;
-  animation: moveInBottom 1.5s ease-out;
+  animation: moveInBottom 2.2s ease-out;
 }
 
 @media only screen and (max-width: 700px) {
@@ -282,17 +288,15 @@ footer {
 }
 
 /* ANIMATION */
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-5rem);
+@keyframes typing {
+  from {
+    width: 0;
   }
-  75% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
 
