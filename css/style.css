@@ -114,7 +114,7 @@ video#bgvideo {
 
 @media only screen and (max-width: 450px) {
   .hero__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
