@@ -273,21 +273,21 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
 
-.contact a {
-  margin: 10px;
-}
+  &__link {
+    margin: 10px;
 
-.contact a:link,
-.contact a:visited {
-  backface-visibility: hidden;
-  transition: all 0.2s;
-}
+    &:link,
+    &:visited {
+      backface-visibility: hidden;
+      transition: all 0.2s;
+    }
 
-.contact a:hover,
-.contact a:active {
-  transform: translateY(4px);
+    &:hover,
+    &:active {
+      transform: translateY(4px);
+    }
+  }
 }
 
 /* FOOTER */

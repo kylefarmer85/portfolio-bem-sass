@@ -265,18 +265,16 @@ i {
   justify-content: space-evenly;
 }
 
-.contact a {
+.connect__link {
   margin: 10px;
 }
 
-.contact a:link,
-.contact a:visited {
+.connect__link:link, .connect__link:visited {
   backface-visibility: hidden;
   transition: all 0.2s;
 }
 
-.contact a:hover,
-.contact a:active {
+.connect__link:hover, .connect__link:active {
   transform: translateY(4px);
 }
 
