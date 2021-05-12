@@ -11,7 +11,7 @@ hr {
   width: 7rem;
   margin: 0 auto;
   color: $primary-light;
-  border: dotted .6rem;
+  border: dotted .5rem;
   border-bottom: none;
 }
 
@@ -36,16 +36,26 @@ i {
 
 /* HERO */
 
+video#bgvideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+}
+
 .hero {
-  background-image: linear-gradient(
+  background: linear-gradient(
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 1)
-    ),
-    url('/img/flyingtoasters.gif');
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
+    );
   height: 100vh;
 
   &__text-box {
@@ -126,7 +136,6 @@ i {
     }
   }
 }
-
 
 /* ABOUT */
 
