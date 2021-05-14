@@ -13,8 +13,8 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"> -->
 
   <title>Kyle Farmer's Portfolio</title>
 </head>
@@ -182,6 +182,16 @@
   <footer>
     <p>© 2021 Kyle Farmer</p>
   </footer>
+
+  <script type="text/javascript">
+    (function() {
+      var css = document.createElement('link');
+      css.href = "https://use.fontawesome.com/releases/v5.15.2/css/all.css";
+      css.rel = 'stylesheet';
+      css.type = 'text/css';
+      document.getElementsByTagName('head')[0].appendChild(css);
+    })();
+  </script>
 
   <script
     src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
