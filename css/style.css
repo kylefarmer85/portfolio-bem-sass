@@ -235,6 +235,15 @@ video#bgvideo {
   color: #264de4;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 /* PROJECTS */
 .projects {
   display: flex;
