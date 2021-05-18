@@ -132,11 +132,8 @@ video#bgvideo {
   }
 }
 
-.main-nav {
-  background: rgba(0, 0, 0, 0.3);
-}
-
 .main-nav__link-box {
+  z-index: 1;
   display: flex;
   justify-content: space-evenly;
   position: fixed;
