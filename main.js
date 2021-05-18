@@ -4,30 +4,10 @@ const scroll = new SmoothScroll('.main-nav a[href*="#', {
 
 const sections = document.querySelectorAll('section');
 const faders = document.querySelectorAll('.fade-in');
-
-// const options = {
-//   root: null,
-//   threshold: 0,
-//   rootMargin: '-250px'
-// };
-
-// const observer = new IntersectionObserver((entries, observer) => {
-//   entries.forEach(entry => {
-//     if(!entry.isIntersecting) {
-//       return;
-//     }
-//     console.log(entry.target);
-//     entry.target.classList.add("fade-in");
-//     observer.unobserve(entry.target)
-//   });
-// }, options);
-
-// sections.forEach(section => {
-//   observer.observe(section)
-// })
+const sliders = document.querySelectorAll('.slide-in');
 
 const appearOptions = {
-  threshold: .5,
+  threshold: 0,
   rootMargin: '0px'
 };
 
@@ -39,10 +19,13 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
       entry.target.classList.add('appear');
       appearOnScroll.unobserve(entry.target);
     }
-  })
-},
-appearOptions);
+  });
+}, appearOptions);
 
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
+});
+
+sliders.forEach(slider => {
+  appearOnScroll.observe(slider);
 });

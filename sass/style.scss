@@ -209,17 +209,6 @@ video#bgvideo {
   }
 }
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 200ms ease-in;
-
-  &.appear {
-    opacity: 1;
-  }
-}
-
-
-
 /* PROJECTS */
 
 .projects {
@@ -321,7 +310,40 @@ footer {
   padding: .3rem;
 }
 
-/* ANIMATION */
+/* INTERSECTION OBSERVER TRANSITIONS */
+
+.from-left {
+  opacity: 0;
+  transform: translateX(-30%);
+  transition: all 550ms ease-in;
+
+  &.appear {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.from-right {
+  opacity: 0;
+  transform: translateX(30%);
+  transition: all 550ms ease-in;
+
+  &.appear {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+
+  &.appear {
+    opacity: 1;
+  }
+}
+
+/* ANIMATIONS */
 
 @keyframes typing { 
   from { width: 0; } 

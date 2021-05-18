@@ -235,15 +235,6 @@ video#bgvideo {
   color: #264de4;
 }
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 200ms ease-in;
-}
-
-.fade-in.appear {
-  opacity: 1;
-}
-
 /* PROJECTS */
 .projects {
   display: flex;
@@ -337,7 +328,39 @@ footer {
   padding: .3rem;
 }
 
-/* ANIMATION */
+/* INTERSECTION OBSERVER TRANSITIONS */
+.from-left {
+  opacity: 0;
+  transform: translateX(-30%);
+  transition: all 550ms ease-in;
+}
+
+.from-left.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.from-right {
+  opacity: 0;
+  transform: translateX(30%);
+  transition: all 550ms ease-in;
+}
+
+.from-right.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+/* ANIMATIONS */
 @keyframes typing {
   from {
     width: 0;
