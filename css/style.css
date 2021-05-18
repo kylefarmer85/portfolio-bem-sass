@@ -26,7 +26,7 @@ main {
 }
 
 /* REUSABLE */
-article {
+section {
   padding: 5rem 0;
 }
 
@@ -44,7 +44,7 @@ i {
   color: #ffd369;
 }
 
-.article-heading {
+.section-heading {
   color: #eee;
   font-size: 4rem;
   font-family: 'Courier', 'Arial', 'sans-serif';
@@ -54,7 +54,7 @@ i {
 }
 
 @media only screen and (max-width: 500px) {
-  .article-heading {
+  .section-heading {
     font-size: 3rem;
   }
 }
