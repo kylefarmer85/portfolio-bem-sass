@@ -234,9 +234,17 @@ video#bgvideo {
 
 /* PROJECTS */
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 3rem;
+}
+
+@media only screen and (max-width: 875px) {
+  .projects {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
 }
 
 .project {
