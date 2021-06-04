@@ -43,9 +43,6 @@ video#bgvideo {
   min-width: 100%;
   min-height: 100%;
   z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background: url("/img/blank.jpg") no-repeat;
   background-size: cover;
@@ -78,7 +75,11 @@ video#bgvideo {
     color: $white;
     margin: 0 auto;
     
-    animation: 
+    -webkit-animation: 
+      typing 1.5s steps(22, end),
+      blink .75s step-end infinite alternate;
+    
+            animation: 
       typing 1.5s steps(22, end),
       blink .75s step-end infinite alternate;
       
@@ -98,7 +99,8 @@ video#bgvideo {
   
     font-weight: 300;
     line-height: 1.5em;
-    animation: moveInBottom 2.2s ease-out;
+    -webkit-animation: moveInBottom 2.2s ease-out;
+            animation: moveInBottom 2.2s ease-out;
 
     @media only screen and (max-width: 700px) {
       font-size: 1rem;
@@ -265,7 +267,8 @@ video#bgvideo {
 
     &:link,
     &:visited {
-      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
       transition: all 0.2s;
     }
 
@@ -294,7 +297,8 @@ video#bgvideo {
 
     &:link,
     &:visited {
-      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
       transition: all 0.2s;
     }
 
@@ -350,12 +354,36 @@ footer {
 
 /* ANIMATIONS */
 
+@-webkit-keyframes typing { 
+  from { width: 0; } 
+}
+
 @keyframes typing { 
   from { width: 0; } 
 }
 
+@-webkit-keyframes blink { 
+  50% { border-color: transparent; } 
+}
+
 @keyframes blink { 
   50% { border-color: transparent; } 
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  75% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 100;
+    transform: translate(0);
+  }
 }
 
 @keyframes moveInBottom {
